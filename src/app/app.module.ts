@@ -16,7 +16,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     ListPage,
     // LoginPage,
-    SplashPage
+    // SplashPage
   ],
   imports: [
     BrowserModule,

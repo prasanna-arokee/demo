@@ -17,7 +17,7 @@ import { SplashPageModule } from '../pages/splash/splash.module';
     MyApp,
     HomePage,
     ListPage,
-    // LoginPage,
+    LoginPage,
     // SplashPage
   ],
   imports: [

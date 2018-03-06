@@ -15,12 +15,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
-    LoginPage,
+    // LoginPage,
     SplashPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    // LoginPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

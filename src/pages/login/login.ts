@@ -26,7 +26,7 @@ export class LoginPage {
     })
   }
   logoutWithFacebook() {
-    this.fire.auth.signout();
+    this.fire.auth.signOut();
    }
   Homepage() {
     this.navCtrl.push(HomePage);

@@ -15,7 +15,18 @@ import { LoginPageModule } from '../pages/login/login.module';
 import { SplashPageModule } from '../pages/splash/splash.module';
 import { TermsPageModule } from '../pages/terms/terms.module';
 import { PrivacyPage } from '../pages/privacy/privacy';
+import { AngularFireModule} from 'angularfire2';
+import { AngularFireAuthModule} from 'angularfire2/auth';
 
+
+ var config = {
+    apiKey: "AIzaSyCffOuw5PgSa3AFLxt4LY3JtaLS8nZr6mQ",
+    authDomain: "fire-event.firebaseapp.com",
+    databaseURL: "https://fire-event.firebaseio.com",
+    projectId: "fire-event",
+    storageBucket: "fire-event.appspot.com",
+    messagingSenderId: "623737690943"
+  };
 
 @NgModule({
   declarations: [
@@ -31,7 +42,9 @@ import { PrivacyPage } from '../pages/privacy/privacy';
     LoginPageModule,
     SplashPageModule,
     TermsPageModule,
-    PrivacyPageModule
+    PrivacyPageModule,
+    AngularFireAuthModule,
+    AngularFireModule.initializeApp(config)
   ],
   bootstrap: [IonicApp],
   entryComponents: [

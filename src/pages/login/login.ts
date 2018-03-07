@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
-
+import { AngularFireAuth } from 'angularfire2/auth';
+import firebase from 'firebase';
 /**
  * Generated class for the LoginPage page.
  *
@@ -16,8 +17,17 @@ import { HomePage } from '../home/home';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private fire:AngularFireAuth,public navCtrl: NavController, public navParams: NavParams) {
   }
+  loginWithFacebook(){
+    this.fire.auth.signInWithPopup(new firebase.auth.FacebookAuthProvider())
+    .then(res => {
+      console.log(res);
+    })
+  }
+  logoutWithFacebook() {
+    this.fire.auth.signout();
+   }
   Homepage() {
     this.navCtrl.push(HomePage);
   }

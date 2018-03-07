@@ -1,3 +1,5 @@
+import { PrivacyPageModule } from './../pages/privacy/privacy.module';
+import { TermsPage } from './../pages/terms/terms';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -11,6 +13,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPageModule } from '../pages/login/login.module';
 import { SplashPageModule } from '../pages/splash/splash.module';
+import { TermsPageModule } from '../pages/terms/terms.module';
+import { PrivacyPage } from '../pages/privacy/privacy';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +29,9 @@ import { SplashPageModule } from '../pages/splash/splash.module';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     LoginPageModule,
-    SplashPageModule
+    SplashPageModule,
+    TermsPageModule,
+    PrivacyPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -32,7 +39,9 @@ import { SplashPageModule } from '../pages/splash/splash.module';
     HomePage,
     ListPage,
     LoginPage,
-    SplashPage
+    SplashPage,
+    TermsPage,
+    PrivacyPage
   ],
   providers: [
     StatusBar,

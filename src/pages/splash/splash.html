@@ -11,12 +11,12 @@
         <h4>What's on for kids</h4>
         <p class="padd">By using this you agree to our</p>
         <p class="lin">
-          <a>Terms os service</a> and
-          <a>Privacy Policy</a>
+          <a  (click)="Terms();">Terms os service</a> and
+          <a (click)="Privacy();">Privacy Policy</a>
         </p>
         <button class="btn-cus" (click)="Login();" ion-button color="secondary" round>Login</button>
         <p>
-          <a>Continue as Guest</a>
+          <a (click)="guest();">Continue as Guest</a>
         </p>
       </div>
     </ion-col>

@@ -5,9 +5,11 @@ page-login {
 }
 .btn-fb{
   background-color: #3B5998;
+  font-weight: 100;
 }
 .btn-goo{
   background-color: #D50F26;
+  font-weight: 100;
 }
 .bor{
 border-top: 2px solid red;
@@ -35,7 +37,7 @@ svg:not(:root).svg-inline--fa{
 }
 .item-input ion-input,
 .item-input ion-textarea{
-  border:1px solid darkgray;
+  // border:1px solid darkgray;
 }
 
 .item-md{
@@ -66,17 +68,17 @@ svg:not(:root).svg-inline--fa{
 }
 
 
-
 }
-page-login .item-cus:hover{
-  background-color: none;
-}
-page-login .btn-fb:hover {
-  background-color: none;
-}
-page-login .btn-goo:hover {
-  background-color: none;
-}
+// }
+// page-login .item-cus:hover{
+//   background-color: none;
+// }
+// page-login .btn-fb:hover {
+//   background-color: none;
+// }
+// page-login .btn-goo:hover {
+//   background-color: none;
+// }
 
 
 
